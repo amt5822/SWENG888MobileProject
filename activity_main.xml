@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/imgFlowers"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/flowers"/>
+
+
+<LinearLayout
+    android:id="@+id/llInput"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/imgFlowers"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editLoginEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Email or ID"
+        android:layout_gravity="center_horizontal"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editLoginPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Password"
+        android:layout_gravity="center_horizontal"
+        android:inputType="textPassword" />
+
+</LinearLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llInput"
+            android:text="LOGIN"
+            android:background="@color/colorAccent"
+            android:layout_marginTop="75dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/textOr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnLogin"
+            android:text="@string/txtOr"
+            android:padding="15dp"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/btnGoToSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIGN UP"
+            android:layout_below="@id/textOr"
+            android:background="@color/colorPrimary"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
